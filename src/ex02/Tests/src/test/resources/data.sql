@@ -1,6 +1,6 @@
-insert into Product (id, name, price) values
-  (1, 'milk', 100),
-  (2, 'cookies', 200),
-  (3, 'chocolate', 300),
-  (4, 'ice cream', 400),
-  (5, 'crispy staff', 500);
+insert into product (name, price) values
+  ('bananas', 85),
+  ('apples', 110),
+  ('oranges', 125),
+  ('potatoes', 60),
+  ('onion', 75);
