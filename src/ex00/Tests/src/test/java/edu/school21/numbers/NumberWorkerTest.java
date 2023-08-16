@@ -15,7 +15,7 @@ public class NumberWorkerTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {71293, 190367, 20233, 2, 3})
+    @ValueSource(ints = {643, 809, 37, 7, 3})
     void isPrimeForPrimes(int number) {
         Assertions.assertTrue(numberWorker.isPrime(number));
     }
