@@ -1,6 +1,6 @@
 insert into product (name, price) values
-  ('milk', 100),
-  ('cookies', 200),
-  ('chocolate', 300),
-  ('ice cream', 400),
-  ('crispy staff', 500);
+  ('bananas', 85),
+  ('apples', 110),
+  ('oranges', 125),
+  ('potatoes', 60),
+  ('onion', 75);
