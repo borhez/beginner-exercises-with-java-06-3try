@@ -16,15 +16,15 @@ public class ProductsRepositoryJdbcImplTest {
     EmbeddedDatabase dataSource;
 
     final List<Product> EXPECTED_FIND_ALL_PRODUCTS = Arrays.asList(
-            new Product(1L, "milk", 100),
-            new Product(2L, "cookies", 200),
-            new Product(3L, "chocolate", 300),
-            new Product(4L, "ice cream", 400),
-            new Product(5L, "crispy staff", 500)
+            new Product(0L, "bananas", 85),
+            new Product(1L, "apples", 110),
+            new Product(2L, "oranges", 125),
+            new Product(3L, "potatoes", 60),
+            new Product(4L, "onion", 75)
     );
-    final Product EXPECTED_FIND_BY_ID_PRODUCT = new Product(2L, "cookies", 200);
-    final Product EXPECTED_UPDATED_PRODUCT = new Product(3L, "cake", 750);
-    final Product EXPECTED_SAVED_PRODUCT = new Product(6L, "cherry pie", 400);
+    final Product EXPECTED_FIND_BY_ID_PRODUCT = new Product(2L, "oranges", 125);
+    final Product EXPECTED_UPDATED_PRODUCT = new Product(3L, "tomatoesUPDATE", 750);
+    final Product EXPECTED_SAVED_PRODUCT = new Product(6L, "lemonsSAVED", 400);
 
     @BeforeEach
     void init() {
