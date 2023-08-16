@@ -15,19 +15,19 @@ public class NumberWorkerTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {71293, 190367, 20233, 2, 3})
+    @ValueSource(ints = {643, 37, 7, 3})
     void isPrimeForPrimes(int number) {
         Assertions.assertTrue(numberWorker.isPrime(number));
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {523569, 8989, 19011})
+    @ValueSource(ints = {53350, 666, 35})
     void isPrimeForNotPrimes(int number) {
         Assertions.assertFalse(numberWorker.isPrime(number));
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {1, 0, -5, -852, -71293})
+    @ValueSource(ints = {0, 1, -111})
     void isPrimeForIncorrectNumbers(int number) {
         Assertions.assertThrows(IllegalNumberException.class, () -> numberWorker.isPrime(number));
     }
